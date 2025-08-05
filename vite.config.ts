@@ -3,7 +3,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
-  base: '/monster-stopwatch/',
+  base: '/monsterstopwatch/',
   plugins: [vue()],
   resolve: {
     alias: {
