@@ -245,4 +245,46 @@ body {
   color: var(--text-color);
   border-color: var(--monster-green-dark-hover);
 }
+
+@media (max-width: 600px) {
+
+  .settings,
+  .controls {
+    flex-direction: column;
+    /* Yan yana dizmek yerine alt alta diz */
+    align-items: center;
+    /* Dikey eksende ortala */
+    gap: 1.2rem;
+    /* Aralarındaki dikey boşluğu biraz artıralım */
+  }
+
+  .input-group {
+    width: 100%;
+    /* Dikeyde hizalanan grupların tam genişlikte olmasını sağla */
+  }
+
+  .input-group input {
+    width: 100px;
+    /* Inputların genişliği sabit kalabilir, şık duruyor */
+  }
+
+  .btn {
+    width: 90%;
+    /* Butonlar ekranın çoğunu kaplasın */
+    max-width: 320px;
+    /* Ama çok da büyümesinler */
+    box-sizing: border-box;
+    /* Padding'in genişliği etkilememesi için önemli */
+    padding: 1rem 1.5rem;
+    /* Mobil için dokunma alanını büyütelim */
+  }
+
+  .controls {
+    flex-direction: row;
+    /* Çalışma sırasındaki butonlar yan yana daha iyi durabilir */
+    flex-wrap: wrap;
+    /* Ama sığmazlarsa alt satıra atsınlar */
+    width: 100%;
+  }
+}
 </style>
